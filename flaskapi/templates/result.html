@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    {% if q1answer in questions[0]['answer'] and q2answer in questions[1]['answer'] and q3answer in questions[2]['answer'] %}
+    <!-- correct -->
+        <title>Correct</title>
+        <h1> Congrats Player, you bested the troll</h1>
+        <img src="https://c.tenor.com/ToObbsrZOmYAAAAC/king-arthur-what.gif" alt="troll loses" srcset="">
+>
+    {% else %}
+    <!-- incorrect -->
+        <title>Fail</title>
+        <h1>You failed {{name}}</h1>
+        <h2>Your choices of {{color}} and {{answer}} did not satisfy the troll</h2>
+        <img src="https://c.tenor.com/rv-kW765hYEAAAAC/star-trek-star-trek-tos.gif" alt="falling off" srcset="">
+    {% endif %}
+    
+</head>
+<body>
+    
+</body>
+</html>
